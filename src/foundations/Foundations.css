@@ -1,0 +1,17 @@
+.f { padding: 32px; color: var(--content-primary); font-family: var(--font-family); min-width: 880px; }
+.f h2 { margin: 0 0 4px; font: var(--display-weight) var(--display-size)/var(--display-line) var(--font-family); }
+.f p.sub { margin: 0 0 32px; color: var(--content-tertiary); font-size: var(--body-size); }
+.f h3 { margin: 32px 0 12px; font: var(--headline-weight) var(--headline-size)/var(--headline-line) var(--font-family); }
+.f .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.f .sw { background: var(--bg-card); border: 1px solid var(--border-surface); border-radius: var(--radius-m); overflow: hidden; }
+.f .sw i { display: block; height: 64px; }
+.f .sw div { padding: 10px 12px; font-size: var(--label-size); line-height: 16px; }
+.f .sw b { display: block; font-weight: 500; font-size: var(--body-size); }
+.f .sw span { color: var(--content-tertiary); font-family: ui-monospace, monospace; }
+.f .row { display: grid; grid-template-columns: 160px 1fr 220px; align-items: baseline; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border-surface); }
+.f .row code, .f code { color: var(--content-tertiary); font-size: 12px; }
+.f .bar { display: flex; align-items: center; gap: 16px; padding: 8px 0; }
+.f .bar i { display: block; height: 16px; background: var(--brand-default); border-radius: 4px; }
+.f .rad { width: 96px; height: 96px; background: var(--bg-card); border: 1px solid var(--border-interactive); }
+.f .rads { display: flex; gap: 24px; }
+.f .rads div { font-size: 12px; color: var(--content-tertiary); display: grid; gap: 8px; justify-items: start; }

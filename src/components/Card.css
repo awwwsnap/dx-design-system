@@ -1,0 +1,5 @@
+.ds-card { box-sizing: border-box; width: 360px; padding: var(--space-xl); background: var(--bg-card); border: 1px solid var(--border-surface); border-radius: var(--radius-l); color: var(--content-primary); font-family: var(--font-family); transition: background var(--base-duration-fast), border-color var(--base-duration-fast); }
+.ds-card.is-interactive { cursor: pointer; }
+.ds-card.is-interactive:hover { background: var(--bg-hover); border-color: var(--border-interactive); }
+.ds-card__title { margin: 0 0 var(--space-s); font: var(--headline-weight) var(--headline-size)/var(--headline-line) var(--font-family); }
+.ds-card__body { font: var(--body-weight) var(--body-size)/var(--body-line) var(--font-family); color: var(--content-secondary); }

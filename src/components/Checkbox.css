@@ -1,0 +1,8 @@
+.ds-checkbox { display: inline-flex; align-items: center; gap: var(--space-s); cursor: pointer; color: var(--content-primary); font: var(--body-weight) var(--body-size)/var(--body-line) var(--font-family); }
+.ds-checkbox input { position: absolute; opacity: 0; }
+.ds-checkbox__box { display: grid; place-items: center; width: 20px; height: 20px; border-radius: 6px; background: var(--input-bg); border: 1px solid var(--input-border); color: transparent; transition: background var(--base-duration-fast), border-color var(--base-duration-fast); }
+.ds-checkbox:hover .ds-checkbox__box { border-color: var(--input-border-hover); background: var(--input-bg-hover); }
+.ds-checkbox input:checked + .ds-checkbox__box { background: var(--brand-default); border-color: var(--brand-default); color: var(--content-primary); }
+.ds-checkbox input:focus-visible + .ds-checkbox__box { outline: 2px solid var(--border-focus); outline-offset: 2px; }
+.ds-checkbox.is-disabled { cursor: not-allowed; color: var(--content-disabled); }
+.ds-checkbox.is-disabled .ds-checkbox__box { opacity: .5; }

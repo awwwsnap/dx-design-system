@@ -1,0 +1,8 @@
+.ds-alert { --c: var(--status-error); box-sizing: border-box; display: flex; gap: var(--space-m); width: 360px; padding: var(--space-l); background: var(--bg-floating); border: 1px solid color-mix(in srgb, var(--c) 50%, transparent); border-radius: var(--radius-m); font-family: var(--font-family); }
+.ds-alert--error { --c: var(--status-error); }
+.ds-alert--caution { --c: var(--status-caution); }
+.ds-alert--warning { --c: var(--status-warning); }
+.ds-alert--favorite { --c: var(--status-favorite); }
+.ds-alert__dot { flex: none; width: 8px; height: 8px; margin-top: 6px; border-radius: 50%; background: var(--c); }
+.ds-alert b { display: block; font: var(--label-weight) var(--body-size)/var(--body-line) var(--font-family); color: var(--content-primary); }
+.ds-alert p { margin: 2px 0 0; font: var(--body-weight) var(--label-size)/var(--label-line) var(--font-family); color: var(--content-secondary); }

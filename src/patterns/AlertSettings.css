@@ -1,0 +1,5 @@
+.as { display: grid; gap: var(--space-l); margin-top: var(--space-m); }
+.as__row { display: flex; justify-content: space-between; align-items: center; color: var(--content-primary); }
+.as__field { display: grid; gap: var(--space-s); font: var(--label-weight) var(--label-size)/var(--label-line) var(--font-family); color: var(--content-secondary); }
+.as .ds-input { width: 100%; }
+.as .ds-alert { width: auto; }

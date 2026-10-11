@@ -1,11 +1,15 @@
-.ds-nav { position: relative; box-sizing: border-box; display: flex; align-items: center; gap: var(--space-m); width: 296px; height: 44px; padding: 0 var(--space-m) 0 var(--space-m); border-radius: var(--radius-m); background: var(--nav-item-bg); color: var(--nav-item-text); text-decoration: none; overflow: hidden; font: var(--label-weight) var(--body-size)/var(--body-line) var(--font-family); transition: background var(--base-duration-fast); }
-.ds-nav__glow { position: absolute; inset: 0 auto 0 0; width: 64px; border-radius: var(--radius-m) 0 0 var(--radius-m); border-left: 2px solid var(--nav-item-glow); background: linear-gradient(90deg, color-mix(in srgb, var(--nav-item-glow) 60%, transparent), transparent); opacity: 0; transition: opacity var(--base-duration-fast); pointer-events: none; }
+.ds-nav { position: relative; box-sizing: border-box; display: flex; align-items: center; gap: var(--space-l); width: 296px; height: 44px; padding: 0 10px 0 var(--space-m); border-radius: 14px; background: var(--nav-item-bg); color: var(--nav-item-text); text-decoration: none; overflow: hidden; font: var(--label-weight) 16px/20px var(--font-family); transition: background var(--base-duration-fast); }
+/* свечение слева: плотная кромка + градиент внутрь + мягкий ореол вокруг иконки */
+.ds-nav__glow { position: absolute; inset: 0 auto 0 0; width: 100px; border-radius: 14px 0 0 14px; border-left: 3px solid var(--nav-item-glow); background: color-mix(in srgb, var(--nav-item-glow) 50%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, #000 0, rgba(0,0,0,.55) 35%, transparent 100%); mask-image: linear-gradient(90deg, #000 0, rgba(0,0,0,.55) 35%, transparent 100%);
+  opacity: 0; transition: opacity var(--base-duration-fast); pointer-events: none; }
 .ds-nav:hover, .ds-nav--hover, .ds-nav--active { background: var(--nav-item-bg-hover); }
 .ds-nav:hover .ds-nav__glow, .ds-nav--hover .ds-nav__glow, .ds-nav--active .ds-nav__glow { opacity: 1; }
 .ds-nav:focus-visible { outline: 2px solid var(--border-focus); outline-offset: -2px; }
-.ds-nav__icon { position: relative; display: block; width: 24px; height: 24px; flex: none; }
+.ds-nav__icon { position: relative; z-index: 1; display: block; width: 24px; height: 24px; flex: none; }
 .ds-nav__icon img { display: block; }
-.ds-nav__dot { position: absolute; top: -2px; right: -3px; width: 6px; height: 6px; border-radius: 50%; background: var(--nav-item-dot); }
-.ds-nav__label { flex: 1; }
-.ds-nav__counter { padding: 2px 8px; border-radius: var(--radius-s); background: var(--nav-item-counter-bg); color: var(--nav-item-counter-text); font: var(--label-weight) var(--label-size)/var(--label-line) var(--font-family); }
-.ds-nav__badge { padding: 2px 10px; border-radius: var(--radius-s); background: var(--nav-item-badge-bg); color: var(--nav-item-badge-text); font: var(--label-weight) var(--label-size)/var(--label-line) var(--font-family); }
+.ds-nav__dot { position: absolute; top: -6px; right: -11px; width: 8px; height: 8px; border-radius: 50%; background: var(--nav-item-dot); }
+.ds-nav__label { flex: 1; position: relative; z-index: 1; }
+.ds-nav__counter { box-sizing: border-box; min-width: 46px; height: 26px; padding: 0 10px; display: grid; place-items: center; border-radius: 8px; border: 1px solid var(--border-surface); background: var(--nav-item-counter-bg); color: var(--nav-item-counter-text); font: var(--label-weight) 14px/16px var(--font-family); }
+.ds-nav:hover .ds-nav__counter, .ds-nav--hover .ds-nav__counter, .ds-nav--active .ds-nav__counter { background: var(--bg-panel); }
+.ds-nav__badge { height: 26px; padding: 0 10px; display: grid; place-items: center; border-radius: 9px; background: var(--nav-item-badge-bg); color: var(--nav-item-badge-text); font: var(--label-weight) 14px/16px var(--font-family); }

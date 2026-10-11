@@ -3,13 +3,13 @@ import { NavItem } from './NavItem';
 export default {
   title: 'Components/NavItem',
   component: NavItem,
-  decorators: [(S) => <div style={{ width: 294 }}><S /></div>],
-  args: { label: 'Виджеты', active: false, dot: false },
+  args: { label: 'Виджеты', state: 'default', dot: false },
+  argTypes: { state: { control: 'inline-radio', options: ['default', 'hover', 'active'] } },
 };
 
 export const Default = {};
-export const Active = { args: { active: true } };
-export const WithDot = { name: 'С индикатором', args: { dot: true } };
-export const WithCounter = { name: 'Со счётчиком', args: { counter: '0%' } };
-export const WithBadge = { name: 'Бейдж «Новое»', args: { badge: 'Новое', dot: true } };
-// Наведи курсор на любой пункт: фон, иконка и фиолетовое свечение слева меняются
+export const Hover = { args: { state: 'hover' } };
+export const Active = { args: { state: 'active', dot: true } };
+export const WithCounter = { args: { counter: '0%' } };
+export const WithBadge = { args: { badge: 'Новое' } };
+export const WithDot = { args: { dot: true } };

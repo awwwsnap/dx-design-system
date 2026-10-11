@@ -32,3 +32,16 @@
   --nav-item-badge-bg: var(--brand-default);
   --nav-item-badge-text: var(--content-primary);
 }
+
+/* nav-item */
+:root {
+  --nav-item-bg: var(--bg-panel);
+  --nav-item-bg-hover: var(--bg-card);
+  --nav-item-glow: var(--brand-default);
+  --nav-item-dot: var(--brand-default);
+  --nav-item-text: var(--content-primary);
+  --nav-item-counter-bg: var(--bg-card);
+  --nav-item-counter-text: var(--content-tertiary);
+  --nav-item-badge-bg: var(--brand-default);
+  --nav-item-badge-text: var(--content-primary);
+}

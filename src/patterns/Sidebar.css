@@ -1,0 +1,7 @@
+.sb { box-sizing: border-box; width: 328px; padding: var(--space-l); background: var(--bg-panel); border-radius: var(--radius-l); font-family: var(--font-family); color: var(--content-primary); }
+.sb__balance { display: grid; justify-items: center; gap: var(--space-s); padding: var(--space-xl) 0; }
+.sb__balance > span { color: var(--content-tertiary); font: var(--body-weight) var(--headline-size)/var(--headline-line) var(--font-family); }
+.sb__balance b { font: var(--display-weight) var(--display-size)/var(--display-line) var(--font-family); }
+.sb__balance small { font-size: var(--headline-size); color: var(--content-secondary); }
+.sb nav { display: grid; gap: var(--space-xs); margin-top: var(--space-s); }
+.sb .ds-nav { width: auto; }

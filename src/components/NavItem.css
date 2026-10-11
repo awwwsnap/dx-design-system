@@ -1,15 +1,11 @@
-.nav-item { position: relative; box-sizing: border-box; display: flex; align-items: center; gap: var(--space-m); width: 100%; height: 40px; padding: 0 var(--space-m) 0 var(--space-m); border: 0; border-radius: var(--radius-m); background: var(--nav-item-bg); color: var(--nav-item-text); font: var(--label-weight) var(--body-size)/var(--body-line) var(--font-family); text-align: left; cursor: pointer; overflow: hidden; transition: background var(--base-duration-fast); }
-.nav-item::before { content: ''; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(90deg, var(--nav-item-glow), transparent 30%); box-shadow: inset 2px 0 0 var(--brand-default); opacity: 0; z-index: 0; transition: opacity var(--base-duration-fast); pointer-events: none; }
-.nav-item:hover, .nav-item.is-active { background: var(--nav-item-bg-hover); }
-.nav-item:hover::before, .nav-item.is-active::before { opacity: 1; }
-.nav-item:focus-visible { outline: 2px solid var(--border-focus); outline-offset: 2px; }
-.nav-item__icon { position: relative; flex: none; width: 24px; height: 24px; }
-.nav-item__icon img { display: block; width: 24px; height: 24px; }
-.nav-item__icon .on { position: absolute; inset: 0; opacity: 0; transition: opacity var(--base-duration-fast); }
-.nav-item:hover .nav-item__icon .on, .nav-item.is-active .nav-item__icon .on { opacity: 1; }
-.nav-item__dot { position: absolute; top: -2px; right: -3px; width: 6px; height: 6px; border-radius: 50%; background: var(--nav-item-indicator); }
-.nav-item__label { flex: 1; min-width: 0; }
-.nav-item__counter { padding: 0 var(--space-s); height: 20px; display: grid; place-items: center; border-radius: var(--radius-s); background: var(--nav-item-counter-bg); color: var(--nav-item-counter-text); font: var(--label-weight) var(--label-size)/var(--label-line) var(--font-family); }
-.nav-item__badge { padding: 0 var(--space-s); height: 20px; display: grid; place-items: center; border-radius: var(--radius-s); background: var(--nav-item-badge-bg); color: var(--nav-item-badge-text); font: var(--label-weight) var(--label-size)/var(--label-line) var(--font-family); }
-.nav-item > * { position: relative; z-index: 1; }
-.nav-item > .nav-item__icon { position: relative; }
+.ds-nav { position: relative; box-sizing: border-box; display: flex; align-items: center; gap: var(--space-m); width: 296px; height: 44px; padding: 0 var(--space-m) 0 var(--space-m); border-radius: var(--radius-m); background: var(--nav-item-bg); color: var(--nav-item-text); text-decoration: none; overflow: hidden; font: var(--label-weight) var(--body-size)/var(--body-line) var(--font-family); transition: background var(--base-duration-fast); }
+.ds-nav__glow { position: absolute; inset: 0 auto 0 0; width: 64px; border-radius: var(--radius-m) 0 0 var(--radius-m); border-left: 2px solid var(--nav-item-glow); background: linear-gradient(90deg, color-mix(in srgb, var(--nav-item-glow) 60%, transparent), transparent); opacity: 0; transition: opacity var(--base-duration-fast); pointer-events: none; }
+.ds-nav:hover, .ds-nav--hover, .ds-nav--active { background: var(--nav-item-bg-hover); }
+.ds-nav:hover .ds-nav__glow, .ds-nav--hover .ds-nav__glow, .ds-nav--active .ds-nav__glow { opacity: 1; }
+.ds-nav:focus-visible { outline: 2px solid var(--border-focus); outline-offset: -2px; }
+.ds-nav__icon { position: relative; display: block; width: 24px; height: 24px; flex: none; }
+.ds-nav__icon img { display: block; }
+.ds-nav__dot { position: absolute; top: -2px; right: -3px; width: 6px; height: 6px; border-radius: 50%; background: var(--nav-item-dot); }
+.ds-nav__label { flex: 1; }
+.ds-nav__counter { padding: 2px 8px; border-radius: var(--radius-s); background: var(--nav-item-counter-bg); color: var(--nav-item-counter-text); font: var(--label-weight) var(--label-size)/var(--label-line) var(--font-family); }
+.ds-nav__badge { padding: 2px 10px; border-radius: var(--radius-s); background: var(--nav-item-badge-bg); color: var(--nav-item-badge-text); font: var(--label-weight) var(--label-size)/var(--label-line) var(--font-family); }

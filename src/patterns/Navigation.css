@@ -1,0 +1,12 @@
+.sb { box-sizing: border-box; width: 320px; padding: 16px 12px; background: var(--bg-panel); border-radius: var(--radius-m); display: grid; gap: 4px; font-family: var(--font-family); color: var(--content-primary); }
+.sb__bal { display: grid; justify-items: center; gap: 8px; padding: 24px 0 24px; }
+.sb__bal small { color: var(--content-tertiary); font-size: var(--headline-size); }
+.sb__bal b { font: var(--display-weight) var(--display-size)/var(--display-line) var(--font-family); }
+.nv-dis { display: flex; gap: 56px; align-items: flex-start; padding: 40px; font-family: var(--font-family); color: var(--content-primary); }
+.nv-dis .zone { display: grid; gap: 28px; width: 420px; padding: 24px; background: var(--bg-card); border-radius: var(--radius-l); }
+.nv-dis .zone > div { transform-origin: left center; }
+.nv-dis ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; width: 400px; }
+.nv-dis li { display: grid; grid-template-columns: 130px 1fr; gap: 12px; padding: 11px 14px; background: var(--bg-card); border: 1px solid var(--border-surface); border-radius: var(--radius-m); font-size: var(--label-size); align-items: center; }
+.nv-dis li b { font-size: var(--body-size); font-weight: 500; }
+.nv-dis li code { color: var(--content-tertiary); }
+.nv-dis .lbl { color: var(--content-tertiary); font-size: 12px; margin-bottom: 8px; }

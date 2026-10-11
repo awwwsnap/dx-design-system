@@ -19,3 +19,16 @@
   --toggle-track-on: var(--brand-default);
   --toggle-thumb: var(--content-primary);
 }
+
+/* nav-item */
+:root {
+  --nav-item-bg: var(--bg-panel);
+  --nav-item-bg-hover: var(--bg-card);
+  --nav-item-text: var(--content-primary);
+  --nav-item-glow: color-mix(in srgb, var(--brand-default) 40%, transparent);
+  --nav-item-indicator: var(--brand-default);
+  --nav-item-counter-bg: var(--bg-card);
+  --nav-item-counter-text: var(--content-tertiary);
+  --nav-item-badge-bg: var(--brand-default);
+  --nav-item-badge-text: var(--content-primary);
+}

@@ -7,6 +7,6 @@
 }
 .ds-input::placeholder { color: var(--input-placeholder); }
 .ds-input:hover:not(:disabled) { background: var(--input-bg-hover); border-color: var(--input-border-hover); }
-.ds-input:focus { border-color: var(--input-border-focus); }
+.ds-input:focus, .ds-input.is-focus { border-color: var(--input-border-focus); }
 .ds-input.is-error, .ds-input.is-error:hover:not(:disabled) { border-color: var(--input-border-error); }
 .ds-input:disabled { color: var(--content-disabled); cursor: not-allowed; }

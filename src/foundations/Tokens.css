@@ -1,0 +1,28 @@
+.tk { padding: 32px; max-width: 1040px; color: var(--content-primary); font-family: var(--font-family); }
+.tk h2 { margin: 0 0 4px; font: var(--display-weight) var(--display-size)/var(--display-line) var(--font-family); }
+.tk .sub { margin: 0 0 32px; color: var(--content-tertiary); font-size: var(--body-size); }
+.tk h3 { margin: 40px 0 6px; font: var(--headline-weight) var(--headline-size)/var(--headline-line) var(--font-family); }
+.tk .hint { margin: 0 0 16px; color: var(--content-secondary); font-size: var(--body-size); }
+.tk-layers { display: flex; align-items: stretch; gap: 8px; }
+.tk-layer { flex: 1; padding: 14px; background: var(--bg-card); border: 1px solid var(--border-surface); border-radius: var(--radius-m); }
+.tk-layer b { display: block; font-size: var(--body-size); font-weight: 500; }
+.tk-layer span { display: block; margin-top: 2px; color: var(--content-tertiary); font-size: 12px; line-height: 16px; }
+.tk-layer em { display: block; margin-top: 10px; font-style: normal; font: 600 var(--headline-size)/var(--headline-line) var(--font-family); }
+.tk-arrow { align-self: center; color: var(--content-disabled); }
+.tk-chain { display: flex; align-items: center; gap: 8px; padding: 12px 0; border-bottom: 1px solid var(--border-surface); flex-wrap: wrap; }
+.tk-node { display: flex; align-items: center; gap: 8px; padding: 8px 12px; background: var(--bg-card); border: 1px solid var(--border-surface); border-radius: var(--radius-s); font: 12px/16px ui-monospace, monospace; }
+.tk-node small { color: var(--content-tertiary); font: 500 10px/12px var(--font-family); letter-spacing: .04em; padding: 2px 6px; border-radius: 4px; background: var(--bg-active); }
+.tk-node i { width: 16px; height: 16px; border-radius: 4px; border: 1px solid var(--border-interactive); }
+.tk-node.leaf { border-color: var(--border-interactive); }
+.tk-demo { display: grid; grid-template-columns: 300px 1fr; gap: 24px; align-items: start; }
+.tk-ctl { padding: 16px; background: var(--bg-card); border: 1px solid var(--border-surface); border-radius: var(--radius-l); display: grid; gap: 14px; }
+.tk-ctl label { font-size: 12px; color: var(--content-secondary); }
+.tk-ctl .pal { display: flex; gap: 8px; flex-wrap: wrap; }
+.tk-ctl .pal button { width: 32px; height: 32px; border-radius: 50%; border: 2px solid transparent; cursor: pointer; padding: 0; }
+.tk-ctl .pal button.on { border-color: var(--content-primary); }
+.tk-ctl input[type=color] { width: 100%; height: 36px; border: 1px solid var(--border-surface); border-radius: var(--radius-s); background: var(--bg-panel); padding: 2px; }
+.tk-ctl code { font: 12px ui-monospace, monospace; color: var(--content-tertiary); }
+.tk-ctl .reset { background: none; border: 0; color: var(--content-tertiary); font: inherit; font-size: 12px; cursor: pointer; text-align: left; padding: 0; text-decoration: underline; }
+.tk-stage { padding: 24px; background: var(--bg-panel); border: 1px solid var(--border-surface); border-radius: var(--radius-l); display: grid; gap: 20px; }
+.tk-stage h4 { margin: 0 0 8px; font: 500 12px/16px var(--font-family); color: var(--content-tertiary); text-transform: uppercase; letter-spacing: .06em; }
+.tk-stage .line { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }

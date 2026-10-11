@@ -1,0 +1,6 @@
+.ds-toggle { position: relative; width: 44px; height: 24px; padding: 0; border: 0; border-radius: var(--radius-full); background: var(--toggle-track-off); cursor: pointer; transition: background var(--base-duration-fast); }
+.ds-toggle.is-on { background: var(--toggle-track-on); }
+.ds-toggle__thumb { position: absolute; top: 2px; left: 2px; width: 20px; height: 20px; border-radius: 50%; background: var(--toggle-thumb); transition: transform var(--base-duration-fast); }
+.ds-toggle.is-on .ds-toggle__thumb { transform: translateX(20px); }
+.ds-toggle:focus-visible { outline: 2px solid var(--border-focus); outline-offset: 2px; }
+.ds-toggle:disabled { opacity: .4; cursor: not-allowed; }

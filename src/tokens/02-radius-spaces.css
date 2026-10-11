@@ -1,0 +1,5 @@
+/* 02-radius и spaces: шкала и смысловые имена */
+:root {
+  --space-xs: var(--base-4); --space-s: var(--base-8); --space-m: var(--base-12); --space-l: var(--base-16); --space-xl: var(--base-24);
+  --radius-s: var(--base-8); --radius-m: var(--base-12); --radius-l: var(--base-16); --radius-full: 999px;
+}

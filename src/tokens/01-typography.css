@@ -1,0 +1,8 @@
+/* 01-typography: роли поверх базы */
+:root {
+  --font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --display-size: var(--base-font-28); --display-line: var(--base-line-36); --display-weight: var(--base-weight-semibold);
+  --headline-size: var(--base-font-20); --headline-line: var(--base-line-28); --headline-weight: var(--base-weight-semibold);
+  --body-size: var(--base-font-14); --body-line: var(--base-line-20); --body-weight: var(--base-weight-regular);
+  --label-size: var(--base-font-12); --label-line: var(--base-line-16); --label-weight: var(--base-weight-medium);
+}

@@ -1,0 +1,21 @@
+/* 1.1 color: смысл поверх палитры */
+:root {
+  --bg-base: var(--neutral-950);
+  --bg-panel: var(--neutral-900);
+  --bg-card: var(--neutral-850);
+  --bg-hover: var(--neutral-700);
+  --bg-active: var(--neutral-650);
+  --bg-floating: var(--neutral-800);
+  --border-surface: var(--neutral-750);
+  --border-interactive: color-mix(in srgb, var(--neutral-600) 50%, transparent);
+  --border-focus: color-mix(in srgb, var(--brand-500) 50%, transparent);
+  --border-error: color-mix(in srgb, var(--status-error) 50%, transparent);
+  --content-primary: var(--neutral-50);
+  --content-secondary: var(--neutral-300);
+  --content-tertiary: var(--neutral-400);
+  --content-disabled: var(--neutral-500);
+  --brand-default: var(--brand-500);
+  --brand-hover: var(--brand-400);
+  --brand-pressed: var(--brand-600);
+  --error: var(--status-error);
+}

@@ -1,0 +1,8 @@
+/* 00-base: сырые числа без смысла */
+:root {
+  --base-4: 4px; --base-8: 8px; --base-12: 12px; --base-16: 16px; --base-20: 20px; --base-24: 24px; --base-32: 32px;
+  --base-font-12: 12px; --base-font-14: 14px; --base-font-16: 16px; --base-font-20: 20px; --base-font-28: 28px;
+  --base-weight-regular: 400; --base-weight-medium: 500; --base-weight-semibold: 600;
+  --base-line-16: 16px; --base-line-20: 20px; --base-line-24: 24px; --base-line-28: 28px; --base-line-36: 36px;
+  --base-duration-fast: 120ms;
+}

@@ -1,0 +1,21 @@
+/* 1.2 component color: токены компонентов поверх 1.1 */
+:root {
+  --button-primary-bg: var(--brand-default);
+  --button-primary-bg-hover: var(--brand-hover);
+  --button-primary-bg-pressed: var(--brand-pressed);
+  --button-primary-text: var(--content-primary);
+  --button-secondary-bg: var(--bg-card);
+  --button-secondary-bg-hover: var(--bg-hover);
+  --button-secondary-bg-pressed: var(--bg-active);
+  --input-bg: var(--bg-card);
+  --input-bg-hover: var(--bg-hover);
+  --input-border: var(--border-surface);
+  --input-border-hover: var(--border-interactive);
+  --input-border-focus: var(--border-focus);
+  --input-border-error: var(--border-error);
+  --input-text: var(--content-primary);
+  --input-placeholder: var(--content-tertiary);
+  --toggle-track-off: var(--bg-active);
+  --toggle-track-on: var(--brand-default);
+  --toggle-thumb: var(--content-primary);
+}
